@@ -1,0 +1,5 @@
+bin\Debug\Mechanical.dll
+bin\Debug\Mechanical.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Mechanical.dll
+obj\Debug\Mechanical.pdb

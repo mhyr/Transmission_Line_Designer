@@ -1,0 +1,5 @@
+bin\Debug\Insulation.dll
+bin\Debug\Insulation.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Insulation.dll
+obj\Debug\Insulation.pdb

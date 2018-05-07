@@ -1,0 +1,249 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CA42A82-2FA6-4EDD-AD7D-1F96A5D2DB31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TLD</RootNamespace>
+    <AssemblyName>TLD</AssemblyName>
+    <ManifestCertificateThumbprint>8E456C849FEC3EB16D4816C412B7DD7F4AA1B219</ManifestCertificateThumbprint>
+    <ManifestKeyFile>TLD_1_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Documents and Settings\hamiri\Desktop\lk\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.0.1.41097, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConductorsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConductorsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConductorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConductorSelect.Designer.cs">
+      <DependentUpon>ConductorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newProjectForm.Designer.cs">
+      <DependentUpon>newProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openProjectForm.Designer.cs">
+      <DependentUpon>openProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pressure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pressure.Designer.cs">
+      <DependentUpon>Pressure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConductorSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConductorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newProjectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>newProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openProjectForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>openProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pressure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pressure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resistanceConverter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>resistanceConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unitConverter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>unitConverter.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="resistanceConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resistanceConverter.Designer.cs">
+      <DependentUpon>resistanceConverter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unitConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unitConverter.Designer.cs">
+      <DependentUpon>unitConverter.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Electrical\Electrical.csproj">
+      <Project>{D5309602-E447-4CF5-93EC-7EB197B8594E}</Project>
+      <Name>Electrical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Insulation\Insulation.csproj">
+      <Project>{F462A20E-36B3-40D4-8B3D-F49028EFE70D}</Project>
+      <Name>Insulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mechanical\Mechanical.csproj">
+      <Project>{6A5E7B47-D659-44B1-A57D-2FE879CCB015}</Project>
+      <Name>Mechanical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Noise\Noise.csproj">
+      <Project>{3B5713CC-F5B0-4317-A3E3-21AAC60E5B7B}</Project>
+      <Name>Noise</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\017_PP251.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ucPrintBar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ConductorsDataSet.xsc">
+      <DependentUpon>ConductorsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConductorsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConductorsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConductorsDataSet.xss">
+      <DependentUpon>ConductorsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conductors.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Electrical.bmp" />
+    <None Include="Resources\Mechanical1.bmp" />
+    <None Include="Resources\Mechanical.bmp" />
+    <None Include="Resources\Noise1.jpg" />
+    <None Include="Resources\Noise.jpg" />
+    <None Include="Resources\Insulation.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

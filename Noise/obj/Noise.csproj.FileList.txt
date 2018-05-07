@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\Noise.dll
+bin\Debug\Noise.pdb
+obj\Debug\Noise.dll
+obj\Debug\Noise.pdb

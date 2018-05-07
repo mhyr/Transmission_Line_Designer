@@ -1,0 +1,5 @@
+bin\Debug\Electrical.dll
+bin\Debug\Electrical.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Electrical.dll
+obj\Debug\Electrical.pdb

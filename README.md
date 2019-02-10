@@ -6,4 +6,4 @@ the final project was honored with an excellent score of 20 out of 20 by the jur
 Part of this project was then accepted and published as a paper entitled “Simulation of Radio-TV Interferences in Power Transmission Lines.”
 in the 21st [Tehran International Power System Conference](http://psc-ir.com/en/).
 
-This Software calculates only the electrical parameters of various High-voltage overhead transmission lines.
+This Software calculates the electrical parameters of various High-voltage overhead transmission lines.
